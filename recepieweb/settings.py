@@ -78,6 +78,17 @@ MIDDLEWARE_CLASSES = [
     'cms.middleware.language.LanguageCookieMiddleware',
 ]
 
+CKEDITOR_SETTINGS = {
+    'language': '{{ language }}',
+    'toolbar_CMS': [
+        ['Undo', 'Redo'],
+        ['cmsplugins', '-', 'ShowBlocks'],
+        ['Format', 'Styles'],
+    ],
+    'skin': 'moono',
+}
+
+
 ADMINS = [('Abhinav', 'erabhinav@outlook.com'), ('Jeffrey', 'jeffreylunt@gmail.com')]
 
 # Whether to prepend the 'www.' sub-domain to URLs that dont have it.
