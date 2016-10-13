@@ -34,6 +34,12 @@ INSTALLED_APPS = [
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sites',
+    'allauth',
+    'allauth.account',
+    'allauth.socialaccount',
+    'allauth.socialaccount.providers.facebook',
+    'allauth.socialaccount.providers.google',
+    'allauth.socialaccount.providers.instagram',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
@@ -90,6 +96,12 @@ CKEDITOR_SETTINGS = {
 
 
 ADMINS = [('Abhinav', 'erabhinav@outlook.com'), ('Jeffrey', 'jeffreylunt@gmail.com')]
+
+# Authentication Backends
+AUTHENTICATION_BACKENDS = [
+                            'django.contrib.auth.backends.ModelBackend',
+                            'allauth.account.auth_backends.AuthenticationBackend',
+                           ]
 
 # Whether to prepend the 'www.' sub-domain to URLs that dont have it.
 PREPEND_WWW = False
@@ -180,6 +192,7 @@ TEMPLATES = [
                 'django.contrib.messages.context_processors.messages',
                 'sekizai.context_processors.sekizai',
                 'cms.context_processors.cms_settings',
+                'django.template.context_processors.request',
             ],
         },
     },

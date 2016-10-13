@@ -1,5 +1,5 @@
 """
-this is for creating toolbars for editing the extensions
+this is for creating toolbars for editing the extensions and page property
 """
 
 
