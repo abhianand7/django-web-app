@@ -13,6 +13,7 @@ from cms.utils.page_permissions import user_can_change_page
 from django.core.urlresolvers import reverse, NoReverseMatch
 from django.utils.translation import ugettext_lazy as _
 
+# never do import by doing .models always import as below
 from norecepieweb.models import IconExtension
 from norecepieweb.models import TitleExtensions
 
