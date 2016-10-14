@@ -4,6 +4,11 @@ from django.db import models
 
 from cms.extensions import PageExtension
 from cms.extensions.extension_pool import extension_pool
+from cms.models.pluginmodel import CMSPlugin
+
+
+class Greet(CMSPlugin):
+    guest_name = models.CharField(max_length=50, default='Guest')
 
 
 class IconExtension(PageExtension):
