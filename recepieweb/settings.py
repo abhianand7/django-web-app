@@ -30,6 +30,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'djangocms_admin_style',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -48,7 +49,6 @@ INSTALLED_APPS = [
     'treebeard',
     'menus',
     'sekizai',
-    'djangocms_admin_style',
     'easy_thumbnails',
     'filer',
     # 'mptt' to be included as a must feature as this increases the fetching of data from databases
