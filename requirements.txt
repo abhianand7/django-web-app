@@ -18,7 +18,7 @@ django-filer>=0.9.9
 cmsplugin-filer>=0.10.1
 django-reversion>=1.8.5
 djangocms-text-ckeditor>=3.2
-django-allauth>=
+django-allauth
 
 # run this command
 # sudo aptitude install libpq-dev postgresql-client-9.3 python-dev
