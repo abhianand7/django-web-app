@@ -1,4 +1,5 @@
 {% load cms_tags sekizai_tags %}
+{% load menu_tags %}
 <html>
   <head>
       <title>{% page_attribute "page_title" %}</title>
@@ -6,8 +7,14 @@
   </head>
   <body>
       {% cms_toolbar %}
+      <ul class="nav navbar-nav">
+        {% show_menu 0 1 100 100 "menu.html" %}
+      </ul>
       {% placeholder base_content %}
       {% block base_content %}{% endblock %}
       {% render_block "js" %}
+      <footer>
+        {% static_placeholder 'footer' %}
+      </footer>
   </body>
 </html>
