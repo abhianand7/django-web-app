@@ -7,3 +7,7 @@
 .log
 *.log
 venv
+db.sqlite3
+.idea/
+norecepieweb/migrations/0004_greet.py
+migrations
