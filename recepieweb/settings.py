@@ -219,11 +219,12 @@ WSGI_APPLICATION = 'recepieweb.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-        'TEST': {
-            'NAME': 'mytestdatabase',
-        },
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'recipe',
+        'USER': 'recipeweb',
+        'PASSWORD': 'pwd@ubuntu',
+        'HOST': 'localhost',
+        'PORT': '',
     }
 }
 
