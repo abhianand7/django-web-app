@@ -167,13 +167,13 @@ DEFAULT_CONTENT_TYPE = 'text/html'
 # Default email address to use for various automated correspondence from the site manager(s).
 # This doesnt include error messages sent to ADMINS and MANAGERS;
 # for that, see SERVER_EMAIL.
-# DEFAULT_FROM_EMAIL = 'webmaster@recipeweb.com'
 # sending email using google server
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_HOST_USER = 'norecipeweb@gmail.com'
 EMAIL_HOST_PASSWORD = 'web@emailsupport'
 EMAIL_PORT = 587
+DEFAULT_FROM_EMAIL = 'webmaster@recipeweb.com'
 
 # List of compiled regular expression objects representing User-Agent strings that are not allowed to visit any page,
 # system-wide. Use this for bad robots/crawlers.
