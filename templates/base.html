@@ -1,11 +1,16 @@
 {% load cms_tags sekizai_tags %}
 {% load menu_tags %}
+{% load staticfiles %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
       <meta charset="UTF-8">
-      <title>{% page_attribute "page_title" %}</title>
+
       {% render_block "css" %}
+      <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+      <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+      <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond" rel="stylesheet">
+      <link rel="stylesheet" href="{% static 'css/style.css' %}">
   </head>
   <body>
       {% cms_toolbar %}

@@ -52,13 +52,13 @@ INSTALLED_APPS = [
     'easy_thumbnails',
     'filer',
     # 'mptt' to be included as a must feature as this increases the fetching of data from databases
-    'cmsplugin_filer_utils',
     'cmsplugin_filer_file',
     'cmsplugin_filer_folder',
     'cmsplugin_filer_link',
     'cmsplugin_filer_image',
     'cmsplugin_filer_teaser',
     'cmsplugin_filer_video',
+    'cmsplugin_filer_utils',
     'norecepieweb',
 ]
 
@@ -209,6 +209,13 @@ CMS_TEMPLATE = 'recepieweb.templates'
 CMS_TEMPLATES = (
     ('template_1.html', 'Template One'),
     ('template_2.html', 'Template Two'),
+    ('index.html', 'Home Page'),
+    ('sigin.html', 'Login Page'),
+    ('signup.html', 'Register'),
+    ('about.html', 'About'),
+    ('main_recipe.html', 'Recipe Home'),
+    ('recipe_page.html', 'Recipe Page'),
+    ('contact.html', 'Contact'),
 )
 
 WSGI_APPLICATION = 'recepieweb.wsgi.application'

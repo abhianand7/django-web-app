@@ -1,0 +1,151 @@
+{% extends 'index.html' %}
+{% load staticfiles %}
+
+{% block css_block %}
+
+    <link rel="stylesheet" href="{% static 'css/recipe_page.css' %}">
+{% endblock %}
+<body>
+{% block body_content %}
+    <div class="container">
+
+        <!-- Portfolio Item Heading -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">First Recipe
+                    <small>Dessert</small>
+                    <div class="ratings">
+                        <p>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star-empty"></span>
+                            3 reviews
+                        </p>
+                    </div>
+                </h1>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Portfolio Item Row -->
+        <div class="row">
+
+            <div class="col-md-8">
+                <img class="img-responsive" src="{% static 'images/rsz_700x400.jpg' %}" alt="">
+            </div>
+
+            <div class="col-md-4">
+                <h3>Short Description</h3>
+                <p>Put a small description here about the recipe</p>
+                <h3>Ingredients</h3>
+                <form method="post">
+                    <ul>
+                    <li><label><input type="checkbox" > Ingredient 1</label></li>
+                    <li><label><input type="checkbox" > Ingredient 2</label></li>
+                    <li><label><input type="checkbox" > Ingredient 3</label></li>
+                    <li><label><input type="checkbox" > Ingredient 4</label></li>
+                    <li><label><input type="checkbox" > Ingredient 5</label></li>
+                    <li><label><input type="checkbox" > Ingredient 6</label></li>
+                    <li><label><input type="checkbox" > Ingredient 7</label></li>
+                </ul>
+                    <button class="btn btn-lg btn-primary btn-block" type="submit">Add to Cart</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+        <!-- /.row -->
+<!-- START THE FEATURETTES -->
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h3 class="featurette-heading">Step heading <span class="text-muted">sub heading</span></h3>
+          <p class="lead">description of this step</p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive center-block" src="{% static 'images/rsz_step1_1.jpg' %}" alt="Generic placeholder image">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7 col-md-push-5">
+          <h3 class="featurette-heading">Step heading <span class="text-muted">sub heading</span></h3>
+          <p class="lead">description of this step goes here</p>
+        </div>
+        <div class="col-md-5 col-md-pull-7">
+          <img class="featurette-image img-responsive center-block" src="{% static 'images/rsz_1rsz_step2_2.jpg' %}" alt="Generic placeholder image">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h3 class="featurette-heading">Step heading <span class="text-muted">sub heading</span></h3>
+          <p class="lead">description of this heading</p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive center-block" src="{% static 'images/rsz_step3_3.jpg' %}" alt="Generic placeholder image">
+        </div>
+      </div>
+{#    start review Section #}
+    <div class="well">
+
+                    <div class="text-right">
+                        <a class="btn btn-success">Leave a Review</a>
+                    </div>
+
+                    <hr>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star-empty"></span>
+                            Anonymous
+                            <span class="pull-right">10 days ago</span>
+                            <p>This is awesome.</p>
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star-empty"></span>
+                            Anonymous
+                            <span class="pull-right">12 days ago</span>
+                            <p>a great recipe</p>
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star-empty"></span>
+                            Anonymous
+                            <span class="pull-right">15 days ago</span>
+                            <p>totally loved it</p>
+                        </div>
+                    </div>
+
+                </div>
+{% endblock %}
+</body>

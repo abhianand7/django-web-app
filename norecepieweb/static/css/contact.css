@@ -1,0 +1,189 @@
+
+body{
+    padding-top: 20px;
+}
+#aa-contact {
+  background: #ccc none repeat scroll 0 0;
+  display: inline;
+  float: left;
+  width: 100%;
+}
+#aa-contact .aa-contact-area {
+  display: inline;
+  float: left;
+  padding: 50px 0;
+  width: 100%;
+}
+#aa-contact .aa-contact-area .aa-contact-top {
+  background-color: #FFF;
+  display: inline;
+  float: left;
+  padding: 50px 100px;
+  text-align: center;
+  width: 100%;
+}
+#aa-contact .aa-contact-area .aa-contact-top h2 {
+  color: #555;
+  padding-bottom: 0px;
+}
+#aa-contact .aa-contact-area .aa-contact-top p {
+  color: #555;
+}
+#aa-contact .aa-contact-area .aa-contact-map {
+  display: inline;
+  float: left;
+  width: 100%;
+}
+#aa-contact .aa-contact-area .aa-contact-map iframe {
+  margin-bottom: -6px;
+}
+#aa-contact .aa-contact-area .aa-contact-address {
+  background-color: #FFF;
+  display: inline;
+  float: left;
+  padding: 50px;
+  width: 100%;
+}
+#aa-contact .aa-contact-area .aa-contact-address .aa-contact-address-left {
+  display: inline;
+  float: left;
+  width: 100%;
+}
+#aa-contact .aa-contact-area .aa-contact-address .aa-contact-address-left .comments-form {
+  margin-top: 10px;
+}
+#aa-contact .aa-contact-area .aa-contact-address .aa-contact-address-left .comments-form input {
+  height: 40px;
+  font-size: 16px;
+  border-radius: 0;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+#aa-contact .aa-contact-area .aa-contact-address .aa-contact-address-left .comments-form textarea {
+  border-radius: 0;
+  font-size: 16px;
+  height: 200px;
+  padding: 10px;
+  width: 70%;
+}
+#aa-contact .aa-contact-area .aa-contact-address .aa-contact-address-left .comments-form .form-control:focus {
+  box-shadow: none;
+}
+#aa-contact .aa-contact-area .aa-contact-address .aa-contact-address-left .comments-form .form-group {
+  margin-bottom: 20px;
+  float: left;
+  width: 100% !important;
+}
+#aa-contact .aa-contact-area .aa-contact-address .aa-contact-address-left .comments-form button {
+  width: 100px;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+#aa-contact .aa-contact-area .aa-contact-address .aa-contact-address-right {
+  display: inline;
+  float: left;
+  width: 100%;
+}
+#aa-contact .aa-contact-area .aa-contact-address .aa-contact-address-right address h4 {
+  font-size: 22px;
+}
+#aa-contact .aa-contact-area .aa-contact-address .aa-contact-address-right address span {
+  margin-right: 10px;
+}
+#aa-subscribe {
+  display: inline;
+  float: left;
+  width: 100%;
+}
+#aa-subscribe .aa-subscribe-area {
+  display: inline;
+  float: left;
+  padding: 50px 0;
+  width: 100%;
+  text-align: center;
+}
+#aa-subscribe .aa-subscribe-area h3 {
+  color: #222;
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  margin-top: 0;
+  text-transform: uppercase;
+}
+#aa-subscribe .aa-subscribe-area p {
+  color: #333;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+}
+#aa-subscribe .aa-subscribe-area .aa-subscribe-form {
+  margin: 20px auto 0;
+  position: relative;
+  width: 450px;
+}
+#aa-subscribe .aa-subscribe-area .aa-subscribe-form input[type="email"] {
+  border: 1px solid #ccc;
+  color: #553d26;
+  height: 40px;
+  padding: 5px 125px 5px 10px;
+  width: 100%;
+}
+#aa-subscribe .aa-subscribe-area .aa-subscribe-form input[type="submit"] {
+  color: #1c5522;
+  font-size: 15px;
+  font-weight: bold;
+  height: 40px;
+  letter-spacing: 1px;
+  position: absolute;
+  right: 0;
+  text-transform: uppercase;
+  top: 0;
+  width: 120px;
+}
+
+@media (max-width: 991px) {
+#aa-contact .aa-contact-area .aa-contact-address .aa-contact-address-right {
+  margin-top: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+    #aa-contact .aa-contact-area .aa-contact-top {
+        padding: 20px;
+    }
+
+    #aa-contact .aa-contact-area .aa-contact-top h2 {
+        font-size: 18px;
+        line-height: 22px;
+        padding-bottom: 10px;
+    }
+
+    #aa-contact .aa-contact-area .aa-contact-address .aa-contact-address-left .comments-form textarea {
+        width: 100%;
+    }
+
+    #aa-contact .aa-contact-area .aa-contact-address {
+        padding: 20px;
+    }
+}
+@media (max-width: 360px) {
+    #aa-subscribe .aa-subscribe-area .aa-subscribe-form {
+        width: 100%;
+    }
+      #aa-subscribe .aa-subscribe-area h3 {
+    font-size: 20px;
+  }
+
+  #aa-subscribe .aa-subscribe-area p {
+    font-size: 14px;
+  }
+
+  #aa-subscribe .aa-subscribe-area .aa-subscribe-form input[type="submit"] {
+    font-size: 14px;
+  }
+}

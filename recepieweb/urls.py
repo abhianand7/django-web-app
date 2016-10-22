@@ -18,9 +18,15 @@ from django.conf.urls import include, url
 # from django.conf.urls.i18n import i18n_patterns
 from django.conf.urls.static import static
 from django.contrib import admin
+from norecepieweb.views import signin_view
+from norecepieweb.views import signup_view
 
 urlpatterns = [url(r'^admin/', include(admin.site.urls)),
                url(r'^', include('cms.urls')),
                url(r'^accounts/', include('allauth.urls')),
+               url(r'^login/', signin_view),
+               url(r'^register/', signup_view),
+
+
                ] +\
               static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

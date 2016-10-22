@@ -1,0 +1,49 @@
+{% extends 'index.html' %}
+{% load staticfiles %}
+    {% block css_block %}
+    <!-- Custom styles for this template -->
+    <link href="{% static 'css/about.css' %}" rel="stylesheet">
+    {% endblock %}
+
+<body>
+    {% block body_content %}
+    <div class="site-wrapper">
+
+      <div class="site-wrapper-inner">
+
+        <div class="cover-container">
+
+          <div class="container marketing">
+
+            <!-- Three columns of text below the carousel -->
+            <div class="row">
+              <div class="col-lg-4">
+                <img class="img-circle" src="{% static 'images/team/jeff.JPG' %}" alt="Generic placeholder image" width="140" height="140">
+                <h2>Jeffrey Lunt, Founder</h2>
+                <p>Some highlights of your life and career along with some professional achievements</p>
+                <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+              </div><!-- /.col-lg-4 -->
+              <div class="col-lg-4">
+                <img class="img-circle" src="{% static 'images/team/sarah.jpg' %}" alt="Generic placeholder image" width="140" height="140">
+                <h2>Sarah, Blogger</h2>
+                <p>Career highlights and achievements. Put more details here. Some humour content</p>
+                <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+              </div><!-- /.col-lg-4 -->
+              <div class="col-lg-4">
+                <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+                <h2>Member</h2>
+                <p>Third member of this team. put some highlights here. Put more contents here</p>
+                <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+              </div><!-- /.col-lg-4 -->
+            </div><!-- /.row -->
+
+        </div>
+
+      </div>
+
+    </div>
+        </div>
+
+
+  {% endblock %}
+</body>
