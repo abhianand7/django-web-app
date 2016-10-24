@@ -1,7 +1,6 @@
 *.pyc
 *~
 *.pkl
-*.jpg
 *.png
 .vscode
 .log
