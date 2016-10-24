@@ -216,6 +216,9 @@ CMS_TEMPLATES = (
     ('main_recipe.html', 'Recipe Home'),
     ('recipe_page.html', 'Recipe Page'),
     ('contact.html', 'Contact'),
+    ('forgot_password.html', 'Password Recovery'),
+    ('recovery_redirect.html', 'Recovery Redirect'),
+
 )
 
 WSGI_APPLICATION = 'recepieweb.wsgi.application'

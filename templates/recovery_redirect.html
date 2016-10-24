@@ -1,0 +1,17 @@
+{% extends 'index.html' %}
+{% load staticfiles %}
+{% block css_block %}
+
+    <!-- Custom styles for this template -->
+    <link href="{% static 'css/recovery_redirect.css' %}" rel="stylesheet">
+{% endblock %}
+<body>
+{% block body_content %}
+
+    <div>
+        <p class="text">
+            Request Successfully submitted, Please check your email to continue.
+        </p>
+    </div>
+{% endblock %}
+</body>
