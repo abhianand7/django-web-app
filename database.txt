@@ -1,0 +1,35 @@
+# following defines the database structure of the mysql database
+Following are the databases required according to the permission that needs to be given to the users, admin, editors
+1. user login database # only admin will have access to it
+    a. userid # not to be confused by username, this will be used only internally to provide more security.
+    b. username
+    c. email
+    d. password # encrypted (not to be done immediately but yes needs to be done)
+2. user info database
+    a. userid # same userid to be used as above
+    b. First name
+    c. Last name
+    d. email address    # It will be just used from the above using foriegn key concept of django
+    e. address
+    f. zipcode # required since, when a person will try to purchase items we will be able to tell if that person lives in the servicable area of the grocery shop
+    g. phone number
+    h. sex (optional)
+    i. d.o.b (optional)
+3. recipe database # separate so that editors will be given non-admin permissions
+    This database will have tables according to the categories.
+    each tabel contents by column:
+    a. id/index # id of the recipe
+    b. title # recipe title
+    c. ingredients separated by comma
+    d. short info
+    e. steps of recipe
+    f.
+4. review database (probably not needed immediately)
+    restrictions: # only logged in user will be able to provide review
+    table contents:
+    a. userid # unique id of the user that submitted the review
+    b. recipe id # unique id of the recipe that the user gave feedback to
+    c. rating # rating given to the recipe
+    # from this table an average will be calculated for each unique recipe id
+
+5. 
