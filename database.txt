@@ -1,30 +1,40 @@
-# following defines the database structure of the mysql database
+# Do we need separate databases or just separate tables?
+# following defines the databases of the mysql database
 Following are the databases required according to the permission that needs to be given to the users, admin, editors
 1. user login database # only admin will have access to it
-    a. userid # not to be confused by username, this will be used only internally to provide more security.
+    a. (PK) userid # not to be confused by username, this will be used only internally to provide more security.
     b. username
     c. email
     d. password # encrypted (not to be done immediately but yes needs to be done)
-2. user info database
-    a. userid # same userid to be used as above
-    b. First name
-    c. Last name
-    d. email address    # It will be just used from the above using foriegn key concept of django
-    e. address
-    f. zipcode # required since, when a person will try to purchase items we will be able to tell if that person lives in the servicable area of the grocery shop
-    g. phone number
-    h. sex (optional)
-    i. d.o.b (optional)
+        i. It looks like Django has support for this: https://docs.djangoproject.com/en/1.10/topics/auth/passwords/
+    e. user permissions?
+2. User order history table
+    a. (FK) userid # same userid to be used as above
+    b. (FK) recipe
+    c. unix timestamp
+    d. 
+
 3. recipe database # separate so that editors will be given non-admin permissions
-    This database will have tables according to the categories.
-    each tabel contents by column:
-    a. id/index # id of the recipe
-    b. title # recipe title
-    c. ingredients separated by comma
-    d. short info
-    e. steps of recipe
-    f.
-4. review database (probably not needed immediately)
+    a. Recipes table
+        i. (PK) recipe id
+        ii. name
+        iii. description
+    b. Recipe ingredients table
+        i. (FK) Recipe ID
+        ii. (FK) Ingredient ID
+        iii. unit (ie. cups or ounces)
+        iv. quantity
+    c. Recipe steps table (recipe id and step number will be used together to uniquely identify an entry)
+        i. (FK) recipe id
+        ii. (PK) step number
+        iii. Instructions
+    d. Ingredients
+        i. (PK) ingredient id
+        ii. name
+        iii. walmart sku
+        iv. description
+
+4. review database (not needed for launch)
     restrictions: # only logged in user will be able to provide review
     table contents:
     a. userid # unique id of the user that submitted the review
