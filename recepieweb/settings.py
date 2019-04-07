@@ -95,7 +95,7 @@ CKEDITOR_SETTINGS = {
 }
 
 
-ADMINS = [('Abhinav', 'erabhinav@outlook.com'), ('Jeffrey', 'jeffreylunt@gmail.com')]
+ADMINS = [('ADMIN1', 'xxxxx@outlook.com'), ('ADMIN2', 'xxxxx@gmail.com')]
 
 # Authentication Backends
 AUTHENTICATION_BACKENDS = [
@@ -120,7 +120,7 @@ SECURE_REDIRECT_EXEMPT = []
 SECURE_SSL_REDIRECT = False
 
 # The email address that error messages come from, such as those sent to ADMINS and MANAGERS.
-SERVER_EMAIL = 'error@recepieweb.com'
+SERVER_EMAIL = 'error@xxxx.com'
 
 # The backend used for signing cookies and other data.
 SIGNING_BACKEND = 'django.core.signing.TimestampSigner'
@@ -170,10 +170,10 @@ DEFAULT_CONTENT_TYPE = 'text/html'
 # sending email using google server
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'norecipeweb@gmail.com'
+EMAIL_HOST_USER = 'xxxxx@gmail.com'
 EMAIL_HOST_PASSWORD = 'web@emailsupport'
 EMAIL_PORT = 587
-DEFAULT_FROM_EMAIL = 'webmaster@recipeweb.com'
+DEFAULT_FROM_EMAIL = 'webmaster@xxxx.com'
 
 # List of compiled regular expression objects representing User-Agent strings that are not allowed to visit any page,
 # system-wide. Use this for bad robots/crawlers.
